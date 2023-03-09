@@ -1,11 +1,10 @@
 <?php
 //DBLoader.php
 $objGlobalVar = new GlobalVarTools();
-$objFileToolsDBInfo = (new FileTools(IW_DEFINE_FROM_PANEL . "conf/online.iw"))->KeyValueFileReader();
 
-if ((new IPTools(IW_DEFINE_FROM_PANEL))->getHostAddressLoad() == 'localhost')
-    $objFileToolsDBInfo = (new FileTools(IW_DEFINE_FROM_PANEL . "conf/local.iw"))->KeyValueFileReader();
+$objFileToolsDBInfo = (new FileTools(dirname(__FILE__,3) . "/idefine/conf/online.iw"))->KeyValueFileReader();
 
-//var_dump($objFileToolsDBInfo);
-//exit();
+if ((new IPTools(dirname(__FILE__,3) . "/idefine/"))->getHostAddressLoad() == 'localhost')
+    $objFileToolsDBInfo = (new FileTools(dirname(__FILE__,3) . "/idefine/conf/local.iw"))->KeyValueFileReader();
+
 $objORM = new DBORM((new MySQLConnection($objFileToolsDBInfo))->getConn());

@@ -6,20 +6,24 @@
       <div class="container-lg">
           <div class="flex-fill d-none d-lg-flex">
             <ul class="navbar-nav fw-bold">
-              <li class="nav-item nav-hover">
-                <a class="nav-link" href="women-home.html">زنانه</a>
+<?php foreach(get_nav() as $Nav){
+  $selected_sting_a_css = 'nav-link nav-hover';
+  $selected_sting_li_css = 'nav-item';
+  if(@$_GET['gender'] == @$Nav->Name ){
+      $selected_sting_a_css = 'nav-link  text-white';
+      $selected_sting_li_css = 'nav-item mx-1 bg-dark';
+  }
+  
+  ?>
+              <li class="<?php echo($selected_sting_li_css); ?>">
+                <a class=" <?php echo($selected_sting_a_css); ?>" href="./?gender=<?php echo(@$Nav->Name); ?>"><?php echo(@$Nav->LocalName); ?></a>
               </li>
-              <li class="nav-item mx-1 bg-dark">
-                <a class="nav-link text-white" href="#">مردانه</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-hover" href="kids-home.html">بچگانه</a>
-              </li>
+<?php } ?>
             </ul>
           </div>
           <div class="flex-fill text-start text-lg-center">
-            <a class="navbar-brand" href="#">
-              <img src="media/logo.png" alt="Logo" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="./">
+              <img src="./itemplates/iweb/media/logo.png" alt="Logo" class="d-inline-block align-text-top">
             </a>
           </div>
         <div class="flex-fill dropdhover">

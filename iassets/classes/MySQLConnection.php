@@ -1,6 +1,6 @@
 <?php
 
-require_once "../iassets/interfaces/DBConnectionInterface.php";
+require_once dirname(__FILE__,2) . "/interfaces/DBConnectionInterface.php";
 
 final class MySQLConnection implements DBConnectionInterface
 {
@@ -24,7 +24,8 @@ final class MySQLConnection implements DBConnectionInterface
             strtolower($this->Password) == 'null' ? $this->Password = '' : $this->Password;
             $this->PConn = new PDO('mysql:host='.$this->Host.';dbname='.$this->Datebase.';charset=utf8', $this->User, $this->Password);
             //$this->PConn = new PDO('mysql:host=localhost;dbname=tanjameh2;charset=utf8', 'root', '');
-            $this->PConn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+            $this->PConn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION );
+            $this->PConn->setAttribute(\PDO::ATTR_ORACLE_NULLS, \PDO::NULL_EMPTY_STRING );
 
         } catch (\PDOException $e) {
             throw new\PDOException($e->getMessage(), ( int )$e->getCode());

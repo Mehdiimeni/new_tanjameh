@@ -1,27 +1,12 @@
 <?php
-///template/adver/banner_adver_1.php
+///template/adver/user_trase.php
 ?>
-<div class="bg-aqua text-dark">
-    <div class="container-md">
-      <div class="row pt-5 ps-4 ps-md-0 position-relative placeholder-glow">
-        <div class="col-12 col-md-6 py-3">
-                            <h3 class="fw-semibold">کمد لباس زمستانی</h3>
-                            <h4 class="mb-4">برای همه شکل ها و اندازه ها</h4>
-                <a href="#" class="text-decoration-none text-dark fw-semibold stretched-link">اکنون کشف کنید <i class="fa-solid fa-arrow-left"></i></a>
-        </div>
-        <div class="col-12 col-md-6 card p-0 rounded-0 border-0">
-           <div class="position-relative pt-48 bg-dark-subtle placeholder">   
-            <img class="lazy-image position-absolute top-0 w-100" data-src="./itemplates/iweb/media/men/men-a.webp" alt="">
-           </div> 
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- carousel center nonloop -->
-  <div class="container-fluid py-5 bg-aqua-light">
+<div class="container-fluid py-5">
   <div class="row">
   <div class="col-0 col-md-1"></div>
   <div class="col-12 col-md-11 position-relative overflow-hidden">
+    <h3 class="fw-semibold">از جایی که ترک کردی ادامه بده</h3>
+<h4>به تازگی بازدید شده</h4>
     <div class="container position-absolute bottom-50 z-2">
       <div class="position-relative index-owl-nav"></div>
     </div>
@@ -34,15 +19,12 @@
                <a href="#" class="text-decoration-none">
                 <div class="card text-dark rounded-0 border-0 bg-transparent">
                   <div class="position-relative">
-                  <img data-src="./itemplates/iweb/media/men/men-a1.webp" class="card-img rounded-0 owl-lazy" alt="...">
-                  <div class="position-absolute bottom-0 end-0 hstack gap-1">
-                      <div class="text-bg-light p-1 mb-2"><small>جدید</small></div>
-                      <div class="text-bg-danger p-1 mb-2"><small>تا ۳۰٪ تخفیف</small></div>
-                    </div>
+                  <img data-src="./itemplates/iweb/media/women-carousel-b1.webp" class="card-img rounded-0 owl-lazy" alt="...">
+                    <div class="text-bg-danger p-1 mb-2 position-absolute bottom-0 end-0"><small>تا ۳۰٪ تخفیف</small></div>
                   </div>
                   <div class="card-body p-0 py-2">
-                    <h6 class="m-0 text-truncate">Vintage Supply</h6>
-                    <h6 class="m-0 text-truncate">عرق MONET ARTS - Sweatshirt - شن و ماسه</h6>
+                    <h6 class="m-0 text-truncate">KnowledgeCotton Apparel</h6>
+                    <h6 class="m-0 text-truncate">آستین بلند - بلوز دکمه دار - چند رنگ</h6>
                   </div>
                   <section>
                     <h6>۵،۴۰۰،۰۰۰ تومان</h6>
@@ -58,7 +40,7 @@
                <a href="#" class="text-decoration-none">
                 <div class="card text-dark rounded-0 border-0 bg-transparent">
                   <div class="position-relative">
-                  <img data-src="./itemplates/iweb/media/men/men-a2.webp" class="card-img rounded-0 owl-lazy" alt="...">
+                  <img data-src="./itemplates/iweb/media/women-carousel-b2.webp" class="card-img rounded-0 owl-lazy" alt="...">
                     <div class="text-bg-light p-1 mb-2 position-absolute bottom-0 end-0"><small>تک سایز</small></div>
                   </div>
                   <div class="card-body p-0 py-2">
@@ -79,7 +61,7 @@
                <a href="#" class="text-decoration-none">
                 <div class="card text-dark rounded-0 border-0 bg-transparent">
                   <div class="position-relative">
-                  <img data-src="./itemplates/iweb/media/men/men-a3.webp" class="card-img rounded-0 owl-lazy" alt="...">
+                  <img data-src="./itemplates/iweb/media/women-carousel-b3.webp" class="card-img rounded-0 owl-lazy" alt="...">
                   </div>
                   <div class="card-body p-0 py-2">
                     <h6 class="m-0 text-truncate">HOSBJERG</h6>
@@ -99,7 +81,7 @@
                <a href="#" class="text-decoration-none">
                 <div class="card text-dark rounded-0 border-0 bg-transparent">
                   <div class="position-relative">
-                  <img data-src="./itemplates/iweb/media/men/men-a4.webp" class="card-img rounded-0 owl-lazy" alt="...">
+                  <img data-src="./itemplates/iweb/media/women-carousel-b4.webp" class="card-img rounded-0 owl-lazy" alt="...">
                   </div>
                   <div class="card-body p-0 py-2">
                     <h6 class="m-0 text-truncate">HOSBJERG</h6>
@@ -123,7 +105,7 @@
                <a href="#" class="text-decoration-none">
                 <div class="card text-dark rounded-0 border-0 bg-transparent">
                   <div class="position-relative">
-                  <img data-src="./itemplates/iweb/media/men/men-a5.webp" class="card-img rounded-0 owl-lazy" alt="...">
+                  <img data-src="./itemplates/iweb/media/women-carousel-b5.webp" class="card-img rounded-0 owl-lazy" alt="...">
                   </div>
                   <div class="card-body p-0 py-2">
                     <h6 class="m-0 text-truncate">HOSBJERG</h6>
@@ -143,7 +125,7 @@
                <a href="#" class="text-decoration-none">
                 <div class="card text-dark rounded-0 border-0 bg-transparent">
                   <div class="position-relative">
-                  <img data-src="./itemplates/iweb/media/men/men-a6.webp" class="card-img rounded-0 owl-lazy" alt="...">
+                  <img data-src="./itemplates/iweb/media/women-carousel-6.webp" class="card-img rounded-0 owl-lazy" alt="...">
                   </div>
                   <div class="card-body p-0 py-2">
                     <h6 class="m-0 text-truncate">HOSBJERG</h6>

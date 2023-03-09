@@ -33,6 +33,8 @@ const TableIWWebSubMenu = "iw_web_sub_menu";
 const TableIWWebSub2Menu = "iw_web_sub_2_menu";
 const TableIWWebSub3Menu = "iw_web_sub_3_menu";
 const TableIWWebSub4Menu = "iw_web_sub_4_menu";
+const TableIWWebSiteInfo = "iw_website_info";
+const TableIWWebSiteAlert = "iw_website_alert";
 //API
 const TableIWAPIContents = "iw_api_contents";
 const TableIWAPIProducts = "iw_api_products";
