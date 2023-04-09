@@ -35,12 +35,14 @@
               </a>
                 <ul id="accountDrop" class="dropdown-menu b-animate b-dark border-0 rounded-0 position-absolute">
                   <!-- show li when user is not login -->
-                  <li class="px-3 mt-2"><a class="btn btn-dark w-100 rounded-0" href="#">ورود</a></li>
+                  <li class="px-3 mt-2"><a class="btn btn-dark w-100 rounded-0" href="./login"><?php echo(_LANG['login']); ?></a></li>
+<?php if (@$objACL->NormalUserLogin(dirname(__FILE__,4)  . '/irepository/log/login/user/' . $UserIdKey)) { ?>
                   <li class="b-animate b-purple px-3 pt-2">
-                    <a class="text-decoration-none text-mediumpurple d-inline-block" href="#">ثبت نام</a>
+                    <a class="text-decoration-none text-mediumpurple d-inline-block" href="./signin">ثبت نام</a>
                     <span class="font-x-s">- تنها یک دقیقه طول می کشد.</span>
                   </li>
                   <li><hr class="dropdown-divider"></li>
+                  <?php }else{ ?>
                   <!-- end show -->
                   <!-- show li when user is login -->
                   <li><a class="dropdown-item" href="#">پروفایلم</a></li>
@@ -54,6 +56,7 @@
                     </div>
                     </a></li>
                   <!-- end show -->
+                  <?php } ?>
                 </ul>
             </li>
             <!-- wishlist -->
